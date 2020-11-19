@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Felipe Ruiz
+//class exercise Car lot simulator
+using System;
 
 namespace CarLotSimulator
 {
@@ -6,21 +8,41 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
-            //TODO
-
-            //Create a seperate class file called Car
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property
+            //Done
 
 
-            //Now that the Car class is created we can instanciate 3 new cars
-            //Set the properties for each of the cars
-            //Call each of the methods for each car
+            //dot notation
+            var PhilsCar = new Car();
+            PhilsCar.Make = "Ford";
+            PhilsCar.Model = "Focus";
+            PhilsCar.Year = 2013;
+            PhilsCar.EngineNoise = "vroom";
+            PhilsCar.HonkNoise = "beep";
+            PhilsCar.IsDriveable = true;
 
-            //*************BONUS*************//
+            //object initializer
+            var LliversCar = new Car()
+            {
+                Year = 2019,
+                Make = "Tesla",
+                Model = "Cyber Truck",
+                EngineNoise = "...",
+                HonkNoise = "brmmp",
+                IsDriveable = false
 
-            // Set the properties utilizing the 3 different ways we learned about, one way for each car
+            };
+
+            //constructor allowing parameter values inside properties
+            var LizsCar = new Car(2013, "Honda", "Civic", "vrrroom", "vruuuga", true);
+
+            //call methods
+            PhilsCar.MakeEngineNoise(PhilsCar.EngineNoise);
+            LliversCar.MakeEngineNoise(LliversCar.EngineNoise);
+            LizsCar.MakeEngineNoise(LizsCar.EngineNoise);
+
+
+
+
 
             //*************BONUS X 2*************//
 
