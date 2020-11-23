@@ -11,7 +11,8 @@ namespace CarLotSimulator
         //default empty constructor 
         public Car()
         {
-
+            CarLot.numberOfCars++;
+            //className.StaticMember;
         }
         //make those parameters more readable 
         //methods of the same name is overloading 
